@@ -1,0 +1,139 @@
+.inner {
+    margin:0 auto;
+    width:84.6%;
+    padding: 260px 0;
+    @include sp {
+        padding: 60px 0;
+    }
+}
+
+
+.title {
+    position: absolute;  
+    font-size: 18px;
+    //margin-bottom: 11px;
+    font-style: Roboto;
+    color: #707070;
+    &:after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid;
+    width: 121px;
+    margin-left: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+    }
+}
+
+
+
+.concept {
+    width: 100%;
+    height: 1200px;
+        @include sp {
+            height: 550px;
+            width: 100%;
+        }
+    &_top {
+        height: 40%;
+        background-color: #A193861F;
+        position: relative;
+    }
+    
+    &_bottom {
+        height: 60%;
+        background-color: #A1938689;
+    }
+    &_picture {
+        margin-top: 22px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &_picture_1 {
+        object-fit: cover;
+        width: 100%; object-fit: cover;
+        height: 100%;
+        position: relative;
+        img {
+            width: 100%;
+        }
+        &_pc {
+            display: block;
+            @include sp {
+                display: none;
+            }
+        }
+        &_sp {
+            display: none;
+            @include sp {
+                display: block;
+            }
+        }
+
+    }
+    &_picture_2 {
+        
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        //height: 413px;
+        img {
+            padding-left: 11px;;
+            width: 100%;
+        }
+        &_pc {
+            display: block;
+            @include sp {
+                display: none;
+            }
+        }
+        &_sp {
+            display: none;
+            @include sp {
+                display: block;
+            }
+        }
+    }
+    &_logo {
+        margin: 0 10%;
+        height: 130px;
+        display: flex;
+        //justify-content: space-between;
+        @include sp {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    &_important {
+            //position: absolute;
+            height: 100%;
+            width: 60%;
+            margin-top: 90px;
+            font-size: 40px;
+            font-style: ヒラギノ明朝 Pro;
+            color: #fff;
+            @include sp {
+                width: 100%;
+                margin-top: 50px;
+                font-size: 18px;
+            }
+    }
+    &_text {
+        
+            //position: absolute;
+            height: 100%;
+            width: 50%;
+            margin-top: 60px;
+            font-size: 16px;
+            font-style: ヒラギノ角ゴ Pro;
+            color: #fff;
+            @include sp {
+                margin-top: 18px;
+                width: 100%;
+            }
+        
+
+    }
+
+}
+

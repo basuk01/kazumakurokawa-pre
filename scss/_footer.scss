@@ -1,0 +1,83 @@
+footer {
+    height: 380px;
+    background-color: #FFFFFF;  
+    @include sp {
+        height: 230px;
+    }
+}
+
+.footer {
+    &_name {
+        height: 100%;
+        width: 80.6%;
+        margin: 0 auto;
+        padding-top: 250px;
+        padding-bottom: 60px;
+        @include sp {
+            padding: 0;
+        }
+        &_sns {
+            padding-left: 2rem;
+            transform: translate(0,12%);
+            @include sp {
+                height: 18px;
+                transform: translate(0%, 75%);
+            }
+        }
+    }
+    &_salon {
+        font-style: Roboto Mono for Powerline;
+        font-size: 32px;
+        color: #7070704D;
+        transform: translate(12%, 25%);
+        @include sp {
+            font-size: 18px;
+            transform: translate(0%,75%);
+            height: 18px;
+        }
+    }
+    &_reserve {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        @include sp {
+            flex-flow: row wrap;
+        }
+    }
+    &_btn {
+        order: 1;
+        width: 15%;
+        height: 75%;
+        background-color: #fff;
+        font-size: 18px;
+        border: 1px solid;
+        border-color: #707070;
+        @include sp {
+            width: 60%;
+            height: 20%;
+            transform: translate(37.5%,75%);
+        }
+    }
+    &_wrap {
+        order: 2;
+        width: 20%;
+        min-width: 300px;
+        display: flex;
+        justify-content: space-between;
+        @include sp {
+
+            width: 100%;
+        }
+    }
+    
+    
+    
+}
+
+i {
+    width: 20px;
+    height: 20px;
+    color: black;
+}
+    

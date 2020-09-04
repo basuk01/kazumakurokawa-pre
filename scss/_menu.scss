@@ -1,0 +1,54 @@
+.menu {
+    &_wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 22px;
+        @include sp {
+            flex-direction: column;
+        }
+    }
+    &_item {
+        width: 25.5%;
+        @include sp {
+            width: 90%;
+            margin-top: 30px;
+        }
+    }
+    &_img {
+        width: 100%;
+        &_pc {
+            display: block;
+            @include sp{
+                display: none;
+            }
+        }
+        &_sp {
+            display: none;
+            @include sp {
+                display: block;
+            }
+        }
+    }
+    &_text {
+        padding: 0 10px;
+        
+    }
+    &_title {
+        padding: 1rem 2rem;
+        text-align: center;
+        font-style: Roboto Mono for Powerline;
+        font-size: 30px;
+        min-width: 300px;
+        @include sp {
+            padding: 1rem 0;
+            text-align: left;
+        }
+    }
+    &_price {
+        margin-top: 1rem;
+        text-align: right;
+    }
+}
+.menu_img img {
+    width: 100%;
+}
